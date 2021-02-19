@@ -94,7 +94,7 @@ public class SectionMultipleItemAdapter extends BaseSectionMultiItemQuickAdapter
 }
 ```
 section multiple类型需要继承特定实体类，满足特定规则`SectionMultiEntity`,
-```
+```java
   public static List<SectionMultipleItem> getSectionMultiData() {
         List<SectionMultipleItem> list = new ArrayList<>();
         Video video = new Video(HTTPS_AVATARS1_GITHUBUSERCONTENT_COM_LINK, CYM_CHAD);
@@ -121,7 +121,7 @@ section multiple类型需要继承特定实体类，满足特定规则`SectionMu
 ```
 
 数据回调，可根据adapter数据源获取主体item实体类
-```
+```java
       sectionAdapter.setOnItemChildClickListener(new BaseQuickAdapter.OnItemChildClickListener() {
             @Override
             public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
